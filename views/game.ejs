@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>早押しゲーム</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <header>
+        
+        <nav class="nav-header">
+                <div class="logo">
+                   <h3><a href="/">早押しゲーム</a></h3>
+                    <ul class="nav-links">
+                        <li><a href="/game">GAMESTART</a></li>
+                        <li><a href="/ranking">RANKING</a></li>
+                    </ul>
+                
+                
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        </nav>
+        
+       
+    
+    </header>
+    
+  <main>
+
+    <table class="game-table">
+    <tr>
+    <td><button id="1"></button></td>
+    <td><button id="2"></button></td>
+    <td><button id="3"></button></td>
+    </tr>
+
+    <tr>
+        <td><button id="4"></button></td>
+        <td><button id="5"></button></td>
+        <td><button id="6"></button></td>
+    </tr>
+
+    <tr>
+        <td><button id="7"></button></td>
+        <td><button id="8"></button></td>
+        <td><button id="9"></button></td>
+    </tr>
+
+    </table>
+
+<div id="time">00:00:00.000</div>
+
+
+<div class="btn-area">
+<input type="button" class="startGame"value="ゲームを開始する！" onClick="gameStart()">
+</div>
+
+<div class="score"></div>
+<div class="game_end_area">
+<div class="end"></div>
+<div class="once"></div>
+</div>
+
+
+
+
+</main>
+<script src="main.js"></script>
+<script src="game.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

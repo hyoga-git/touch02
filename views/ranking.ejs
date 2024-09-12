@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ランキング一覧</title>
+        <!-- slickのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+<body>
+    <header>
+        
+        <nav class="nav-header">
+                <div class="logo">
+                   <h3><a href="/">早押しゲーム</a></h3>
+                    <ul class="nav-links">
+                        <li><a href="/game">GAMESTART</a></li>
+                        <li><a href="/ranking">RANKING</a></li>
+                    </ul>
+                
+                
+             
+               
+        </nav> 
+       
+    </header>
+    <main>
+        <div id="goto_page_top">TOPへ</div>
+    <div class="ranking">
+      <h2>ランキング一覧TOP20</h2>
+    <% for (let i = 0; i < Math.min(touch.length,20); i++) { %>
+        <% const rank = touch[i]; %>
+        <div class="ranking">
+            <span class="border"><%= i + 1 %>位</span>
+            <span class="name"><%= rank.name %></span>
+            <span class="time"><%= rank.time %></span>
+        </div>
+            <% } %>
+        </main>
+        
+      
+       
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./main.js"></script>
+</html>
