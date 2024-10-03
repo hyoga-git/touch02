@@ -238,7 +238,7 @@ li > a {
     border:1px solid black;
     border-radius: 50px;
     padding:20px;
-    width:250px;
+    width:clamp(9.375rem, 5.592rem + 8.36vw, 15.625rem);
     text-align: center;
     background-color: #333333;
     color:#ffffff;
