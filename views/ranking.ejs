@@ -30,8 +30,8 @@
     <main>
         <div id="goto_page_top">TOPへ</div>
     <div class="ranking">
-      <h2>ランキング一覧TOP20</h2>
-    <% for (let i = 0; i < Math.min(touch.length,20); i++) { %>
+      <h2>ランキング一覧TOP50</h2>
+    <% for (let i = 0; i < Math.min(touch.length,50); i++) { %>
         <% const rank = touch[i]; %>
         <div class="ranking">
             <span class="border"><%= i + 1 %>位</span>
